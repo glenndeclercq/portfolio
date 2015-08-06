@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+    
+    <script type="text/javascript">var projectsFilterList = 
+    [{"id":01,"categories":[{"id":03,"slug":"web","name":"Web"}],"title":"Mapping a day"},
+     {"id":02,"categories":[{"id":04,"slug":"illustratie","name":"Illustratie"}],"title":"Meneer G"},
+     {"id":03,"categories":[{"id":03,"slug":"web","name":"Web"}],"title":"Cirk"},
+     {"id":04,"categories":[{"id":03,"slug":"web","name":"Web"}],"title":"Spéksie 01"},
+     {"id":05,"categories":[{"id":03,"slug":"web","name":"Web"}],"title":"Spéksie 02"},
+     {"id":06,"categories":[{"id":03,"slug":"web","name":"Web"}],"title":"Struktuur"},
+     {"id":07,"categories":[{"id":02,"slug":"print","name":"Print"}],"title":"Gardevil"},
+    ]; </script> 
+    
+
+    <body class="page-template-template-projects">
+    
+    <section class="page">
+    
+        {% include contact.html %}
+        {% include nav.html %}
+
+        <div class="wrapper__navigation ">
+        
+          <div class="navigation-row navigation__main">
+          
+            <div>
+            
+              <div class="navigation-row__column">
+              
+                <ul class="navigation-list">
+                  
+                  <li class="navigation-item js-nav-projecten js-navigation-project-filter navigation-project-filter ">
+    
+    	            <a href="index.html" >Filter projecten</a>
+    
+                  </li>
+
+                </ul>
+                                
+              </div>
+            
+            </div>
+        
+            <div class="project-filters-container">
+                                
+              <div class="project-filters js-project-filters">
+              
+                <div class="project-filters__slider">
+                
+                  <ul class="project-filters__list js-project-filters-list">
+                    
+                    <li class="project-filter js-project-filter" data-filter="*">Alle</li>
+                    
+                    <li class="project-filter js-project-filter" data-filter="print">Print</li>
+                    
+                    <li class="project-filter js-project-filter" data-filter="web">Web</li>
+                    
+                    <li class="project-filter js-project-filter" data-filter="illustratie">Illustratie</li>
+                  
+                  </ul>
+                
+                </div>
+              
+              </div>
+            
+            </div>
+                        
+          </div>
+
+        </div>
+            
+
+        {{ content }}
+            
+     </section>
+
+        {% include footer.html %}
+        {% include js.html %}
+        
+    </body>
+    
+</html>
